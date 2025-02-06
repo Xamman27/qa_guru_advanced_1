@@ -19,3 +19,7 @@ class UserResponse(BaseModel):
 class SuccessRegisterData(BaseModel):
     id: int
     token: str
+
+class LoginRequest(BaseModel):
+    email: str
+    password: str
